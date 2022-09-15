@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'classroom/_guest_header.html' with active='about' %}
+  <h2>Добро пожаловать на платформу, где вы можете проверить, насколько хорошо вы знаете с помощью адартивного теста! <span class="icon-emo-happy"></span></h2>
+  <p >
+       Если у вас есть аккаунт <a href="{% url 'login' %}">Login</a>. Зарегистрируйтесь, если у вас нет учетной записи<a href="{% url 'signup' %}">Для студента</a> or a <a href="{% url 'teacher_signup' %}">Для учителя</a>.
+  </p>
+  <hr>
+
+
+{% endblock %}
