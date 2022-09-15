@@ -123,12 +123,12 @@ def take_quiz(request, pk):
     print(correct_answers)
     print(total_questions - total_unanswered_questions)
     question = unanswered_questions.first()
-    # if correct_answers < 2 and total_questions - total_unanswered_questions == 3:
-    #
-    #     return render(request, 'classroom/students/endr.html')
-    # elif correct_answers <7 and total_questions - total_unanswered_questions == 7:
-    #
-    #     return render(request, 'classroom/students/endr2.html' ,context={'progress':progress})
+    if correct_answers < 2 and total_questions - total_unanswered_questions == 3:
+
+         return render(request, 'classroom/students/endr.html')
+    elif correct_answers <7 and total_questions - total_unanswered_questions == 7:
+
+         return render(request, 'classroom/students/endr2.html' ,context={'progress':progress})
 
     if request.method == 'POST':
 
