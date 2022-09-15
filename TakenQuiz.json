@@ -1,0 +1,1 @@
+[{"model": "classroom.takenquiz", "pk": 42, "fields": {"student": 88, "quiz": 4, "score": 10, "percentage": 100.0, "date": "2022-09-14T11:42:09.218Z"}}, {"model": "classroom.takenquiz", "pk": 43, "fields": {"student": 92, "quiz": 4, "score": 7, "percentage": 70.0, "date": "2022-09-15T09:47:56.975Z"}}]
